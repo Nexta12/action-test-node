@@ -9,6 +9,7 @@ describe("/testNode Endpoint", ()=>{
 
         const response = await request.get("/testNode")
              expect(response.status).toBe(200)
-             expect(response.text).toEqual(expect.any(String));;
+             expect(response.text).toBe("Hello My People")
+            //  expect(response.text).toEqual(expect.any(String));;
     } ) 
 })
